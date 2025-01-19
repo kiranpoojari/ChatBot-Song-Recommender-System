@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-card {
+    width: 400px; /* Fixed width */
+    height: 600px; /* Fixed height */
+    border-radius: 12px; /* Rounded edges */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 12px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #dcf8c6;
+    align-self: flex-end; /* Align user messages to the right */
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #f1f0f0;
+    align-self: flex-start; /* Align bot messages to the left */
+    text-align: left;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.song-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.song-details {
+    flex: 1;
+}
+
+.song-details div {
+    margin-bottom: 5px;
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.audio-container audio {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.full-song-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.full-song-btn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.input-group {
+    display: flex;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#send-btn, #voice-btn {
+    padding: 0 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#send-btn:hover, #voice-btn:hover {
+    background-color: #0056b3;
+}
+
+#voice-btn i {
+    margin-right: 0; /* Ensure icon is centered */
+}

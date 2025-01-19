@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.btn-contact, .btn-try, .btn-feedback {
+    margin-left: 10px;
+}
+
+.btn-try {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-contact {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-feedback {
+    background-color: #dc3545;
+    color: white;
+}
+
+.image-container {
+    position: relative;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content {
+    text-align: center;
+}
+
+.animated-welcome {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.loading-gif {
+    width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-buttons a {
+    color: white;
+    margin-right: 10px;
+}

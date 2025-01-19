@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Song Recommender</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Chatbot Song Recommender</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-contact" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-try" href="#">Try Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-feedback" href="#">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <img src="{% static 'images/index.jpg' %}" alt="Chatbot Song Recommender" class="img-fluid">
+        <div class="overlay">
+            <div class="content">
+                <h2 class="animated-welcome">Welcome to Chatbot Song Recommender</h2>
+                <p>Get personalized music recommendations based on your mood and preferences with our AI-powered chatbot.</p>
+                <!-- Add the GIF here -->
+                <img src="{% static 'images/animated.gif' %}" alt="Loading GIF" class="loading-gif">
+                <!-- End of GIF addition -->
+                <button id="startChatBtn" class="btn btn-primary btn-lg" onclick="window.location.href='{% url 'chatbot' %}'">Try Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-buttons">
+                <a class="nav-link btn btn-contact" href="#">Contact Us</a>
+                <a class="nav-link btn btn-feedback" href="#">Feedback</a>
+            </div>
+            <p class="text-center mt-3">&copy; 2024 Chatbot Song Recommender</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

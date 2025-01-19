@@ -1,0 +1,162 @@
+/* Overall styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.header {
+    background-color: #343a40; /* Dark background for header */
+    padding: 10px 0;
+}
+
+/* Content area styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1; /* This makes the content area grow to take up the available space */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    padding: 20px 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .nav-link {
+    color: white !important;
+    background-color: #343a40;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer .nav-link:hover {
+    background-color: #ffc107; /* Yellow background on hover */
+}
+
+/* Navbar styling */
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffc107; /* Yellow background on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Button styles for different actions */
+.btn-contact {
+    background-color: #007BFF; /* Blue */
+    color: white;
+}
+
+.btn-try {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.btn-feedback {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+/* Image container styling */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    filter: blur(8px); /* Adds a blur effect to the image */
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with opacity */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay .content {
+    z-index: 1; /* Ensures content is above the overlay */
+}
+
+/* Intro container styling */
+.intro-container {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button styling */
+#startChatBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#startChatBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

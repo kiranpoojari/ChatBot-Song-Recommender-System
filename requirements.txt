@@ -1,0 +1,16 @@
+pip install django
+pip install opencv-python
+pip install numpy
+pip install pandas
+pip install tensorflow
+pip install keras
+pip install speechrecognition
+pip install nltk
+pip install requests
+pip install beautifulsoup4
+pip install dlib
+pip install scipy
+pip install pillow
+pip install matplotlib
+pip install django-cors-headers
+pip install gunicorn

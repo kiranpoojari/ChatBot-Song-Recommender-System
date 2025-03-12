@@ -1,9 +1,9 @@
-pip install opencv-python
-pip install numpy
-pip install pandas
-pip install tensorflow
-pip install keras
-pip install speechrecognition
-pip install nltk
-pip install pillow
-pip install matplotlib
+opencv-python
+tensorflow
+django
+requests
+numpy
+pandas
+speechrecognition
+nltk
+gunicorn

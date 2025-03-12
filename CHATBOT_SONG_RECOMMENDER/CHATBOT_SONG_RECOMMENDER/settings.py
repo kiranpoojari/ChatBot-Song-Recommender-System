@@ -31,9 +31,9 @@ SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000/callback'
 SECRET_KEY = 'django-insecure-^#kn9q0o(2%23t!%ce1ft&zgnkcb&9_t345a_6p$32%=6p(o*1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["CHATBOT_SONG_RECOMMENDERonrender.com"]
 
 
 # Application definition

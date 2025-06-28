@@ -2,7 +2,7 @@ import speech_recognition as sr
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-@csrf_exempt  # Disable CSRF for this endpoint (use carefully)
+@csrf_exempt 
 def process_voice(request):
     if request.method == 'POST':
         recognizer = sr.Recognizer()

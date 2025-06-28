@@ -6,7 +6,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from django.shortcuts import render
 from fer import FER
 
-# Initialize Spotify client
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id='7c6fd0ea60de40b094e5b90a77112a7f',
     client_secret='0c2cb1ad1a55489c84af56b03531f4f8'

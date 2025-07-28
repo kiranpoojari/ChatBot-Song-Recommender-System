@@ -17,6 +17,7 @@ def chat_bot_view(request):
 def index_view(request):
     return render(request, 'index.html')
 
+
 def get_song_recommendations(query):
     try:
         results = sp.search(q=query, type='track', limit=8)

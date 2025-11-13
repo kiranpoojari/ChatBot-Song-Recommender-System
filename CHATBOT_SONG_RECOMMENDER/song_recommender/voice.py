@@ -8,6 +8,7 @@ def process_voice(request):
         recognizer = sr.Recognizer()
         audio_file = request.FILES.get('audio')
 
+        
         if not audio_file:
             return JsonResponse({'error': 'No audio file provided'}, status=400)
 

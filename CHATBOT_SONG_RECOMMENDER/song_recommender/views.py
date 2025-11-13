@@ -14,8 +14,10 @@ sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
 def chat_bot_view(request):
     return render(request, 'chat_bot.html')
 
+
 def index_view(request):
     return render(request, 'index.html')
+
 
 
 def get_song_recommendations(query):
